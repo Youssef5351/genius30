@@ -12,10 +12,11 @@ const font = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Genius',
-  description: 'AI Platform',
+  description: 'Ai Platform',
   icons:[
     "./favicon.png"
-  ]
+  ],
+  keywords: 'ai Platform, ai video Generator, ai music generator, ai chatbot, ai image generator, ai, chat ai'
 }
 
 export default async function RootLayout({

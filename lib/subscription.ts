@@ -23,13 +23,16 @@ export const checkSubscription = async () => {
     },
   })
 
-  if (!userSubscription) {
+  const userApiLimit = await prismadb.userApiLimit.findUnique({
+    where: { userId },
+  });
+
+  if (!userSubscription || !userApiLimit) {
     return false;
   }
 
   const isValid =
     userSubscription.stripePriceId &&
-    userSubscription.stripeCurrentPeriodEnd?.getTime()! + DAY_IN_MS > Date.now()
-
+    userSubscription.stripeCurrentPeriodEnd?.getTime()! + DAY_IN_MS > Date.now() 
   return !!isValid;
 };

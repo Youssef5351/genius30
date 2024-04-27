@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts","components/ui/dialog.jsx", "components/pro-modal.tsx", "components/subscription-button.tsx","components/modal-provider.js", "app/(dashboard)/(routes)/settings/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts","components/ui/dialog.jsx", "components/pro-modal.tsx", "components/subscription-button.tsx","components/modal-provider.js", "app/(dashboard)/(routes)/settings/page.jsx", "lib/axios.js", "app/api/purchaseProduct/route.js", "components/landing-pricing.jsx"],
   "exclude": ["node_modules"]
 }
